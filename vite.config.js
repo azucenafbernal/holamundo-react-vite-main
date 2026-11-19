@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // GitHub Pages publica el sitio en https://<usuario>.github.io/<repositorio>/
   // por eso los recursos se sirven desde ese subdirectorio.
-  base: '/holamundo-react-vite/',
+  base: '/holamundo-react-vite-main/',
 })
