@@ -1,0 +1,63 @@
+.App {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.logo {
+  height: 5rem;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1.5rem #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5rem #61dafbaa);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: girar 20s linear infinite;
+  }
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.saludo {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--tarjeta);
+}
+
+.saludo h1 {
+  color: var(--acento);
+  margin: 0 0 0.5rem;
+}
+
+button {
+  font: inherit;
+  padding: 0.6rem 1.2rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--acento);
+  color: #fff;
+  cursor: pointer;
+}
+
+.nota {
+  margin-top: 1.5rem;
+  opacity: 0.75;
+}
